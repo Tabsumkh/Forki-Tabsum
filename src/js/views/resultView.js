@@ -1,0 +1,18 @@
+
+import View from './View.js';
+import previewView from './previewView.js';
+import icons from 'url:../../img/icons.svg';
+
+// Child class of View
+class ResultsView extends View {
+  _parentElement = document.querySelector('.results');
+  _errorMessage = `No recipes found for your search! Please try again.`
+  _message = ''
+
+  _generateMarkup() {
+
+    return this._data.map(result => previewView.render(result, false)).join('')
+  }
+}
+
+export default new ResultsView() // Exporting instance means there can only be one ResultsView. Class nai export gareko bhaye naya instance create garirana miltyo. (Confuse nahunu, just a note.)

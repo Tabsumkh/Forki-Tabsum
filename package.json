@@ -1,0 +1,17 @@
+{
+  "name": "tabsumforki",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Tabsum Khadka",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.0.0",
+    "sass": "^1.62.1"
+  }
+}
